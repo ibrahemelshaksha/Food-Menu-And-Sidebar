@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+}
+
+#container {
+    width: 1200px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 30px;
+}
+
+#container .column-first {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#container .column-first .row {
+    display: flex;
+    gap: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0 rgba(51, 51, 51, 0.219);
+    height: 230px;
+}
+
+#container .column-first .row .image {
+    width: 100%;
+    height: 100%;
+}
+
+#container .column-first .row .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#container .column-first .row .text-row {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0px 20px 0;
+}
+
+#container .column-first .row .text-row .text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    color: rgb(80, 79, 79);
+    font-size: 15px;
+}
+
+#container .column-first .row .text-row h2 {
+    color: rgb(80, 79, 79);
+    font-weight: 400;
+    font-family: 'Lobster', cursive;
+}
+
+#container .column-first .row .text-row .text span {
+    color: tomato;
+}
+
+#container .column-first .row .text-row p:nth-child(3) {
+    color: #aaa;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+#container .column-first .row .text-row p:nth-child(4) {
+    color: tomato;
+    font-size: 14px;
+}
+
+#container .column-first .pages {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
+
+#container .column-first .pages span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#container .column-first .pages span:hover {
+    background-color: tomato;
+    color: white;
+    border: 0px;
+    font-weight: 500;
+}
+
+/* column-secound */
+#container .column-secound {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#container .column-secound div {
+    position: relative;
+}
+
+#container .column-secound div input {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #aaa;
+    padding-left: 20px;
+}
+
+#container .column-secound .categories {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#container .column-secound .categories .cate {
+    display: flex;
+    justify-content: space-between;
+    color: #aaa;
+    align-items: center;
+}
+
+#container .column-secound .categories .cate p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#container .column-secound .categories .cate span {
+    transform: rotate(90deg);
+}
+
+hr {
+    border: 1px solid #aaa;
+}
+
+#container .column-secound .categories h2 {
+    color: rgb(80, 79, 79);
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+}
+
+/*  */
+#container .column-secound .posts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#container .column-secound .posts .post {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#container .column-secound .posts .post .text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#container .column-secound .posts .post .text .icon {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    color: rgb(80, 79, 79);
+}
+
+#container .column-secound .posts .post .text .icon span {
+    color: tomato;
+}
+
+#container .column-secound .posts h2 {
+    color: rgb(80, 79, 79);
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+}
+
+#container .column-secound .posts .image {
+    width: 100px;
+    height: 100px;
+}
+
+#container .column-secound .posts .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+#container .column-secound .posts .post .text h3 {
+    color: rgb(80, 79, 79);
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+}
+
+#container .column-secound .col-image {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-image: url(./images/emy-XoByiBymX20-unsplash\(1\).jpg);
+    background-size: cover;
+    border-radius: 12px;
+    isolation: isolate;
+    text-align: center;
+}
+
+#container .column-secound .col-image span {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 3, 3, 0.863);
+    display: inline-block;
+    z-index: -1;
+    border-radius: 12px;
+}
+
+#container .column-secound .col-image p:nth-child(2) {
+    font-size: 60px;
+    color: rgb(255, 253, 253);
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+#container .column-secound .col-image p:nth-child(3) {
+    font-size: 50px;
+    color: rgb(255, 253, 253);
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    position: absolute;
+    top: 90px;
+    left: 20px;
+}
+
+#container .column-secound .col-image p:nth-child(3) b {
+    font-size: 70px;
+    color: tomato;
+    font-weight: 800;
+    font-size: 70px;
+}
+
+#container .column-secound .col-image p:nth-child(4) {
+    color: rgb(255, 253, 253);
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+}
+
+#container .column-secound .col-image p:nth-child(5) {
+    color: rgb(255, 253, 253);
+    font-size: larger;
+    font-weight: 700;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: tomato;
+    padding: 20px 30px;
+    border-radius: 40px;
+}
+
+/*  */
+#container .column-secound .instagram {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#container .column-secound .instagram .insta-img {
+    display: grid;
+    grid-template-columns: 110px 110px 110px;
+    grid-template-rows: 110px 110px 110px;
+    gap: 15px;
+}
+
+#container .column-secound .instagram .insta-img div {
+    width: 100%;
+    height: 100%;
+}
+
+#container .column-secound .instagram .insta-img div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#container .column-secound .instagram h3 {
+    color: rgb(80, 79, 79);
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+/*  */
+#container .column-secound .tags {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#container .column-secound .tags h3 {
+    color: rgb(80, 79, 79);
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+#container .column-secound .tags .text-tag {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#container .column-secound .tags .text-tag p {
+    background-color: #eee;
+    padding: 10px 25px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+/*  */
+footer {
+    background-image: url(./images/victoria-shes-UC0HZdUitWY-unsplash\(1\).jpg);
+    background-size: cover;
+    position: relative;
+    height: 150px;
+    margin-top: 200px;
+}
+
+footer span:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.87);
+}
+
+footer .foot {
+    background-color: #e8272e;
+    color: white;
+    width: 1000px;
+    height: 150px;
+    border-radius: 12px;
+    position: absolute;
+    top: -75px;
+    left: 450px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .foot div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
+footer .foot div:first-child p:first-child {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+}
+
+footer .foot div:first-child p:last-child {
+    line-height: 1.6;
+    font-style: italic;
+}
+
+footer .foot div:last-child {
+    position: relative;
+}
+
+footer .foot div:last-child input {
+    width: 350px;
+    height: 50px;
+    border-radius: 5px;
+    outline: 0px;
+    padding-left: 20px;
+    border: 1px solid #eee;
+    background-color: rgb(253, 92, 98);
+    color: white;
+    position: absolute;
+    top: -5px;
+    left: -450px;
+}
+
+footer .foot .email span {
+    position: absolute;
+    background-color: #ffffff;
+    color: rgb(255, 1, 1);
+    border-radius: 5px;
+    padding: 16px 30px;
+    top: -5px;
+    right: -5px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px 0 rgba(170, 170, 170, 0.61);
+    transition-duration: .1s;
+}
+footer .foot .email span:active {
+    box-shadow:0 0 0 0 #aaa;
+}
